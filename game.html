@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1 class="logo">Football Champions</h1>
-    <p>Are you a fan of football? Test championship knowledge now!</p>
+    <p>Click on a tournament to test knowledge.</p>
     <div class="game">
         <div class="tournaments">
             <button>World Cup</button>
@@ -17,14 +17,18 @@
             <button>Champions League</button>
             <button>Ballon d'Or</button>
         </div>
-        <p>Enter username and signup if this is your first game or login</p>
-        <input  type="text" id="username" name="username">
         <div>
-           <a href="game.html"><button class="login">Login</button> </a>
-            
-            <button class="signup">Signup</button>
+            Questions
+        </div>
+        <div>
+            <input type="text" id="answer" name="answer">
+            <button>Submit Answer</button>
         </div>
 
+    </div>
+    <div>
+        <p>Correct Answer(s)<span id="correct" >0</span></p>
+        <p>Wrong Answer(s) <span id="wrong">0</span> </p>
     </div>
     
     
