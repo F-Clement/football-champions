@@ -9,28 +9,29 @@
 </head>
 <body>
     <h1 class="logo"><img src="assets/images/football-champions.jpg" alt=""> Football Champions</h1>
-    <div class="user">user</div>
-    <p>Click on a tournament to test knowledge.</p>
+    <p class="welcome">For each of the tournaments below can you tell us the
+        winner? Test championship knowledge now!</p>
     <div class="game">
         <div class="tournaments">
-            <button class="button"><img src="assets/images/world-cup.jpg" alt="World Cup"></button>
-            <button class="button"><img src="assets/images/afcon.jpg" alt="AFCON"></button>
-            <button class="button"><img src="assets/images/champions-league.jpg" alt="Champions League"></button>
-            <button class="button"><img src="assets/images/ballon-d'Or.jpg" alt="Ballon d'Or"></button>
+            <button data-type="World-Cup" class="button"><img src="assets/images/world-cup.jpg" alt="World Cup"></button>
+            <button data-type="AFCON" class="button"><img src="assets/images/afcon.jpg" alt="AFCON"></button>
+            <button data-type="Chm-League" class="button"><img src="assets/images/champions-league.jpg" alt="Champions League"></button>
+            <button data-type="Ballon d'Or" class="button"><img src="assets/images/ballon-d'Or.jpg" alt="Ballon d'Or"></button>
         </div>
         <div>
-            Questions
+            <p>Champions for the year: <span id="year">0</span> </p>
         </div>
-        <div>
+        <div class="answer">
             <input type="text" id="answer" name="answer">
             <button>Submit Answer</button>
         </div>
+        <div id="results">
+            <p class="scores correct">Correct Answer(s): <span id="correct" >0</span></p>
+            <p class="scores wrong">Wrong Answer(s): <span id="wrong">0</span> </p>
+        </div>
 
     </div>
-    <div>
-        <p>Correct Answer(s)<span id="correct" >0</span></p>
-        <p>Wrong Answer(s) <span id="wrong">0</span> </p>
-    </div>
+    <p id="options">Answers:</p>
     
     
     <script src="assets/js/script.js"></script>

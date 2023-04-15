@@ -9,20 +9,22 @@
 </head>
 <body>
     <h1 class="logo"><img src="assets/images/football-champions.jpg" alt=""> Football Champions</h1>
-    <p class="welcome">Are you a fan of football? Test championship knowledge now!</p>
+    <p class="welcome">For each of the tournaments below can you tell us the
+        winner? Test championship knowledge now!</p>
     <div class="game">
         <div class="tournaments">
-            <button class="button"><img src="assets/images/world-cup.jpg" alt="World Cup"></button>
-            <button class="button"><img src="assets/images/afcon.jpg" alt="AFCON"></button>
-            <button class="button"><img src="assets/images/champions-league.jpg" alt="Champions League"></button>
-            <button class="button"><img src="assets/images/ballon-d'Or.jpg" alt="Ballon d'Or"></button>
+            <button data-type="World-Cup" class="button"><img src="assets/images/world-cup.jpg" alt="World Cup"></button>
+            <button data-type="AFCON" class="button"><img src="assets/images/afcon.jpg" alt="AFCON"></button>
+            <button data-type="Chm-League" class="button"><img src="assets/images/champions-league.jpg" alt="Champions League"></button>
+            <button data-type="Ballon d'Or" class="button"><img src="assets/images/ballon-d'Or.jpg" alt="Ballon d'Or"></button>
         </div>
         <p>Enter username and signup if this is your first game or login</p>
         <input  type="text" id="username" name="username">
         <div class="login">
             <button class="login">Login</button>
+            <a href="game.html"><button class="signup">Signup</button></a>
             
-            <button class="signup">Signup</button>
+            
         </div>
 
     </div>
